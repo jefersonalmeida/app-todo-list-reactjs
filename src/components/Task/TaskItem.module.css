@@ -1,0 +1,95 @@
+.container {
+  display: flex;
+  flex: 1;
+  gap: 0.75rem;
+
+  align-items: flex-start;
+  justify-content: space-between;
+
+  padding: 1rem;
+  border-radius: 8px;
+
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+}
+
+.container div {
+  display: flex;
+}
+
+.container label {
+  display: flex;
+  padding: 3px;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.container label input[type='checkbox'] {
+  display: none;
+}
+
+.checkbox {
+  border-radius: 100%;
+  width: calc(1.125rem + 2px);
+  height: calc(1.125rem + 2px);
+  transition: 0.1s all;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkboxUnchecked {
+  border: 2px solid var(--blue);
+  background: transparent;
+  color: transparent;
+}
+
+.checkboxUnchecked:hover {
+  background: var(--blue-dark);
+}
+
+.checkboxChecked {
+  border: 2px solid var(--purple-dark);
+  background-color: var(--purple-dark);
+}
+
+.checkboxChecked:hover {
+  border: 2px solid var(--purple);
+  background-color: var(--purple);
+}
+
+.paragraph {
+  font-size: 0.875rem;
+  /*line-height: 140%;*/
+  user-select: none;
+  transition: 0.1s all;
+}
+
+.paragraphChecked {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.container button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--gray-300);
+  line-height: 0;
+  border-radius: 4px;
+
+  transition: 0.1s background-color;
+}
+
+.container button line, .container button path {
+  transition: 0.1s fill;
+}
+
+.container button:hover {
+  background-color: var(--gray-400);
+}
+
+.container button:hover line, .container button:hover path {
+  color: var(--danger);
+}
